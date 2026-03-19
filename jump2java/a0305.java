@@ -27,18 +27,5 @@ public class a0305 {
         sb3.append("Hello jump to java");
         System.out.println(sb3.substring(0, 4));
         
-        String[] weeks = new String[7];
-        weeks[0] = "월";
-        weeks[1] = "화";
-        weeks[2] = "수";
-        weeks[3] = "목";
-        weeks[4] = "금";
-        weeks[5] = "토";
-        weeks[6] = "일";
-        ///////////////////////
-        String[] weeks1 = {"월", "화", "수", "목", "금", "토", "일"};
-        System.out.println(weeks1[3]);
-        ////////////////
-        
     }
 }
