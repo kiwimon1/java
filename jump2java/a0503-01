@@ -1,0 +1,13 @@
+package jump2java;
+
+public class a0502 {
+    String say() {
+        return "Hi";
+    }
+
+    public static void main(String[] args) {
+        a0502 sample = new a0502();
+        String a = sample.say();
+        System.out.println(a);  // "Hi" 출력
+    }
+}
