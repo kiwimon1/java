@@ -1,0 +1,10 @@
+public class a0502 {
+    void say() {
+        System.out.println("Hi");
+    }
+
+    public static void main(String[] args) {
+    	a0502 sample = new a0502();
+        sample.say();
+    }
+}
