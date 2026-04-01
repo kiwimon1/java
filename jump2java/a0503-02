@@ -1,3 +1,4 @@
+package jump2java;
 public class a0502 {
     void say() {
         System.out.println("Hi");
