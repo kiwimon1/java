@@ -1,3 +1,4 @@
+package jump2java;
 class Animal {
     String name;
 
