@@ -1,0 +1,38 @@
+/////////////////////////////////////////////////////// 인터페이스 작성법
+interface Predator {
+}
+
+class Animal {
+    String name;
+
+    void setName(String name) {
+        this.name = name;
+    }
+}
+class Tiger extends Animal implements Predator {
+}
+
+class Lion extends Animal implements Predator {    
+}
+
+//////////////// 메서드
+
+class Tiger extends Animal implements Predator {
+    public String getFood() {
+        return "apple";
+    }
+}
+
+class Lion extends Animal implements Predator {
+    public String getFood() {
+        return "banana";
+    }
+}
+/////////////////////// 디폴트
+interface Predator {
+    String getFood();
+
+    default void printFood() {
+        System.out.printf("my food is %s\n", getFood());
+    }
+}
