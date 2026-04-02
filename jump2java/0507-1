@@ -1,0 +1,34 @@
+package jump2java;
+class Animal {
+    String name;
+
+    void setName(String name) {
+        this.name = name;
+    }
+}
+
+class Tiger extends Animal {
+}
+
+class Lion extends Animal {
+}
+
+class ZooKeeper {
+    void feed(Tiger tiger) { 
+        System.out.println("feed apple");
+    }
+
+    void feed(Lion lion) {  
+        System.out.println("feed banana");
+    }
+}
+
+public class a05 {
+    public static void main(String[] args) {
+        ZooKeeper zooKeeper = new ZooKeeper();
+        Tiger tiger = new Tiger();
+        Lion lion = new Lion();
+        zooKeeper.feed(tiger);  
+        zooKeeper.feed(lion);
+    }
+}
