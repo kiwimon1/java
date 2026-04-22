@@ -1,0 +1,82 @@
+package jump2java;
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class random {
+    public static void main(String[] args){
+    	Scanner sc = new Scanner(System.in);
+    	Random rand = new Random();
+    	
+    	int answer = rand.nextInt(90)+10;
+    	int user= 0;
+    	int count = 0;
+    	
+    	System.out.println("2 num game start");
+    	
+    	while(true) {
+    		System.out.println("2 wkfl dlqfur");
+    		user = sc.nextInt();
+    		count++;
+    		
+    		if(user >answer) {
+    			System.out.println("작");
+    		}
+    		else if(user <answer) {
+    			System.out.println("큰");
+    		}
+    		else {
+    			System.out.println("ㅈㅈ");
+    			System.out.println("시도"+count+"번");
+    			break;
+    		}
+    		
+    	}
+    	sc.close();
+    }
+}
+/
+package jump2java;
+
+import java.util.Scanner;
+
+public class random {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("월을 입력하세요 : ");
+        int month = sc.nextInt();
+
+        // 3, 4, 5월인 경우 봄
+        if (month >= 3 && month <= 5) {
+            System.out.println("봄");
+        } else {
+            System.out.println("잘못된 입력입니다.");
+        }
+        
+        sc.close();
+    }
+}
+
+/
+package jump2java;
+
+import java.util.Scanner;
+
+public class random {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in); 
+        
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        
+        int count = 0;
+        while(num > 0) {
+            num = num / 10;
+            count++;
+        }
+        
+        System.out.println("Number of digits: " + count);
+        sc.close(); 
+    }
+}
