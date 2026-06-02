@@ -1,0 +1,50 @@
+#include <stdio.h>
+#define SIZE 5
+
+int stack[SIZE];
+int top = -1;
+
+//데이터 삽입
+void push(int data){
+	if (top==SIZE-1){
+		printf("Stack Overflow!\n");
+		return;
+	}
+	stack[++top] = data;
+	printf("%d 삽입 완료 \n", data);
+} 
+//데이터 삭제
+int pop() {
+	if (top ==-1){
+		printf("Stack Underflow!\n");
+		return -1;
+	}
+	return stack[top--];
+}
+//스택 출력
+void display() {
+	int i;
+	if (top == -1){
+		printf("Stack Empty\n");
+		return;
+	}
+	printf("Stack 상태 :");
+	
+	for (i=top; i>=0; i--){
+		printf("%d ", stack[i]);
+	}
+	printf("\n");
+} 
+int main() {
+	push(10);
+	push(20);
+	push(30);
+	
+	display();
+	
+	printf("삭제 : %d\n",pop());
+	
+	display();
+	
+	return 0;
+}
