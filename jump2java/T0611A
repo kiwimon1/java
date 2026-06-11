@@ -1,0 +1,39 @@
+package j2j;
+
+class Car {
+    String name;
+    int year;
+    double battery;
+
+    Car(String name, int year, double battery) {
+        this.name = name;
+        this.year = year;
+        this.battery = battery;
+    }
+
+    void info() {
+        System.out.println("이름: " + name);
+        System.out.println("연식: " + year);
+        System.out.println("배터리: " + battery);
+    }
+
+    int getAge() {
+        return 2026 - year;
+    }
+}
+
+class ElectricCar extends Car {
+
+    ElectricCar(String name, int year, double battery) {
+        super(name, year, battery);
+    }
+}
+
+public class T0611A {
+    public static void main(String[] args) {
+        ElectricCar car = new ElectricCar("아이오닉5", 2023, 72.6);
+
+        car.info();
+        System.out.println("차량 나이: " + car.getAge());
+    }
+}
