@@ -21,7 +21,7 @@ public class MinNumber {
 
 }
 
-/
+-------------------------------------------------
 
 
 package jump2java;
@@ -51,7 +51,9 @@ public class Divisor {
 }
 
 
-/
+-------------------------------------------------
+
+
 package jump2java;
 import java.util.Scanner;
 
@@ -79,7 +81,7 @@ public class DigitCount {
 
 }
 
-/
+-------------------------------------------------
 
 package jump2java;
 import java.util.Scanner;
@@ -128,7 +130,7 @@ public class StudentMain {
 	}
 }
 
-/
+-------------------------------------------------
 
 
 package j2j;
@@ -181,7 +183,7 @@ public class BookProgram {
 	}
 
 
-/
+-------------------------------------------------
 
 
 package j2j;
